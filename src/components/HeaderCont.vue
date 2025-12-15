@@ -9,12 +9,12 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">맛집<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><router-link to="/vue/food/find">맛집 검색</router-link></li>
+                        <li><router-link to="/food/find">맛집 검색</router-link></li>
                         <li><a href="#">음식별 검색</a></li>
                     </ul>
                 </li>
                 <li><a href="#">레시피 목록</a></li>
-                <li><router-link to="/vue/board/list?page=1">커뮤니티</router-link></li>
+                <li><router-link to="/youtube/find">동영상 검색</router-link></li>
             </ul>
         </div>
     </nav>

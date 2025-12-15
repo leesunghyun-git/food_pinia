@@ -5,7 +5,8 @@ export const useFoodStore=defineStore('food',{
     // 1. state => 저장 공간
     state:()=>({
         food_data:{}, // 목록 저장
-        food_detail:{} // 상세 보기
+        food_detail:{}, // 상세 보기
+        find_data:{}
     }),
     // 2. action = mutation까지 처리 
     // =>  tanStack-Query : Redux : 수정 , 삭제 , 추가
@@ -50,6 +51,16 @@ export const useFoodStore=defineStore('food',{
             })
             console.log(response)
             this.food_detail=response.data
+        },
+        async foodFindData({column,page,ss},){
+            console.log('foodFindData Call',column,ss,page)
+            const response = await axios.get('http://localhost/food/find_vue/',{
+                params:{
+                    column,page,ss
+                }
+            })
+            console.log(response.data)
+            this.find_data=response.data
         }
     }
 })

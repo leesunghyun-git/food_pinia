@@ -81,4 +81,12 @@
 	margin: 0px auto;
 	width: 960px;
     }
+    p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .a-link{
+        cursor:pointer;
+    }
 </style>

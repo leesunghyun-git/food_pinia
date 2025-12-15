@@ -64,7 +64,7 @@
         return arr
     }
 </script>
-<style>
+<style scoped>
     .row {
     margin: 0px auto;
     width: 960px;
